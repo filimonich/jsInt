@@ -1,1 +1,1 @@
-# jsInt
+Для уроков по JavaScript
