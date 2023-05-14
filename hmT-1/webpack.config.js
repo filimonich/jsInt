@@ -2,7 +2,8 @@
 let path = require('path');
 
 let conf = {
-  entry: './es6/lesson5-ajax/index.js',
+  entry: './es6/lesson6-axios/index.js',
+  //entry: './es6/lesson5-hw-basis/index.js',
   output: {
     path: path.resolve(__dirname, './js'),
     filename: 'main.js',
@@ -11,7 +12,7 @@ let conf = {
   devServer: {
     overlay: true,
     proxy: {
-      '/js-frontend-api/**': {
+      '/js-6-api/**': {
         target: 'http://localhost/',
         secure: false,
         changeOrigin: true,
