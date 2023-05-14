@@ -2,7 +2,7 @@
 let path = require('path');
 
 let conf = {
-  entry: './es6/lesson3.js',
+  entry: './es6/lesson5-ajax/index.js',
   output: {
     path: path.resolve(__dirname, './js'),
     filename: 'main.js',
@@ -10,7 +10,13 @@ let conf = {
   },
   devServer: {
     overlay: true,
-    watchContentBase: true, // Настройка для автоматической перезагрузки страницы при изменениях
+    proxy: {
+      '/js-frontend-api/**': {
+        target: 'http://localhost/',
+        secure: false,
+        changeOrigin: true,
+      },
+    },
   },
   module: {
     rules: [
