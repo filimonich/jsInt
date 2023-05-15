@@ -1,1 +1,1 @@
-Для уроков по JavaScript
+Для уроков по JavaScript, ООП
