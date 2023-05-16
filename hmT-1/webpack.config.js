@@ -2,8 +2,8 @@
 let path = require('path');
 
 let conf = {
-  entry: './es6/lesson7/index.js',
-  //entry: './es6/lesson5-hw-basis/index.js',
+  //entry: './es6/lesson7-hw-done/index.js',
+  entry: './es6/lesson8/index.js',
   output: {
     path: path.resolve(__dirname, './js'),
     filename: 'main.js',
@@ -12,7 +12,7 @@ let conf = {
   devServer: {
     overlay: true,
     proxy: {
-      '/js-6-api/**': {
+      '/js-hw-api/**': {
         target: 'http://faceprog.ru/',
         secure: false,
         changeOrigin: true,
